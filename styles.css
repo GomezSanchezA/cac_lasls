@@ -1205,6 +1205,78 @@ body.directed.story-slide-active .story-full-slide {
     width: 100%;
     margin: 0 auto;
 }
+.story-full-slide-pipeline {
+    flex: 1;
+    min-height: 0;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: clamp(18px, 2vw, 30px);
+    align-items: center;
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+}
+.story-pipeline-step {
+    position: relative;
+    min-height: clamp(250px, 34vh, 360px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 22px;
+    padding: clamp(24px, 2.6vw, 42px) clamp(18px, 2vw, 30px);
+    border: 1px solid #dbe3ef;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 18px 42px rgba(15, 23, 42, 0.10);
+}
+.story-pipeline-step:not(:last-child)::after {
+    content: "\2192";
+    position: absolute;
+    right: calc(clamp(18px, 2vw, 30px) * -0.92);
+    top: 50%;
+    transform: translate(50%, -50%);
+    color: #2F5597;
+    font-size: clamp(34px, 3vw, 54px);
+    line-height: 1;
+    font-weight: 700;
+    z-index: 2;
+}
+.story-pipeline-index {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #2F5597;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+}
+.story-pipeline-title {
+    color: #2F5597;
+    font-size: clamp(32px, 3vw, 48px);
+    line-height: 1.02;
+    font-weight: 700;
+}
+.story-pipeline-body {
+    color: #111827;
+    font-size: clamp(24px, 2vw, 34px);
+    line-height: 1.12;
+    font-weight: 700;
+}
+@media (max-width: 1180px), (max-height: 760px) {
+    .story-full-slide-pipeline {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        align-content: center;
+    }
+    .story-pipeline-step {
+        min-height: 190px;
+    }
+    .story-pipeline-step:not(:last-child)::after {
+        display: none;
+    }
+}
 .story-full-slide-column {
     min-width: 0;
     display: flex;
@@ -1925,6 +1997,76 @@ body.directed.story-center-equation .story-callout.story-callout-left {
     font-size: clamp(21px, 1.85vw, 29px);
     line-height: 1.06;
     white-space: normal;
+}
+body.directed.story-equation-mode .story-callout.story-callout-asls-loop,
+.story-callout.story-callout-asls-loop {
+    position: fixed;
+    inset: 0;
+    z-index: 706;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    pointer-events: none;
+}
+.story-asls-loop-svg {
+    position: absolute;
+    left: clamp(28px, 5vw, 86px);
+    right: clamp(28px, 5vw, 86px);
+    top: clamp(86px, 10vh, 126px);
+    bottom: clamp(72px, 9vh, 116px);
+    width: auto;
+    height: auto;
+    fill: none;
+    stroke: #2F5597;
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    opacity: 0.9;
+}
+.story-asls-loop-svg marker path {
+    fill: #2F5597;
+}
+.story-asls-loop-note {
+    position: absolute;
+    left: 50%;
+    bottom: clamp(64px, 8vh, 96px);
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    width: max-content;
+    max-width: min(30rem, calc(100vw - 3rem));
+    padding: 12px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.98);
+    color: #111827;
+    text-align: center;
+    font-size: clamp(21px, 1.85vw, 29px);
+    line-height: 1.06;
+    font-weight: 750;
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.16);
+}
+.story-asls-loop-label {
+    position: absolute;
+    right: clamp(46px, 7vw, 130px);
+    top: clamp(112px, 15vh, 188px);
+    max-width: min(22rem, 34vw);
+    padding: 14px 20px;
+    border: 1px solid #dbe3ef;
+    border-radius: 13px;
+    background: rgba(255, 255, 255, 0.98);
+    color: #2F5597;
+    text-align: center;
+    font-size: clamp(25px, 2.3vw, 38px);
+    line-height: 1.04;
+    font-weight: 750;
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.14);
 }
 .story-callout-b {
     color: #D55E00;
