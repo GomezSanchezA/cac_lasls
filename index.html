@@ -403,7 +403,7 @@
         <button class="story-btn story-btn-secondary" id="story-back-btn" onclick="previousDirectedStoryStep()" aria-label="Previous step">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
         </button>
-        <div class="story-step-number" id="story-step-number" aria-live="polite">1</div>
+        <input class="story-step-number" id="story-step-number" type="number" min="1" value="1" inputmode="numeric" aria-label="Slide number. Type a number and press Enter to jump." onkeydown="handleStoryStepNumberKey(event)" onchange="commitStoryStepNumberJump()" onfocus="this.select()">
         <button class="story-btn story-btn-primary" id="story-continue-btn" onclick="nextDirectedStoryStep()" aria-label="Next step">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
         </button>
