@@ -1473,7 +1473,7 @@ body.directed.story-center-equation .story-popover {
     top: 50%;
     bottom: auto;
     transform: translate(-50%, -50%);
-    width: fit-content;
+    width: min(1060px, calc(100vw - 64px));
     min-width: min(360px, calc(100vw - 64px));
     max-width: calc(100vw - 64px);
     padding: 0;
@@ -1489,6 +1489,8 @@ body.directed.story-center-equation.story-equation-upper .story-popover {
     top: 42%;
 }
 body.directed.story-center-equation .story-equation {
+    width: 100%;
+    justify-content: center;
     min-height: 156px;
     padding: 16px 24px 44px;
     animation: none;
@@ -1620,6 +1622,20 @@ body.directed.story-equation-mode .story-callout:not(.story-callout-dual):not(.s
     white-space: normal;
 }
 body.directed.story-callout-visible .story-callout {
+    display: block;
+    text-align: center;
+}
+.story-floating-callout {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 705;
+    box-sizing: border-box;
+    margin: 0;
+    transform: none;
+}
+body.directed.story-floating-callout-visible .story-floating-callout {
     display: block;
     text-align: center;
 }
@@ -2377,7 +2393,24 @@ body.directed.story-lasls-param-dragging * {
 }
 .story-button-row {
     display: flex;
+    align-items: center;
     gap: 12px;
+}
+.story-step-number {
+    min-width: 46px;
+    height: 42px;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 114, 178, 0.18);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.94);
+    color: #0072B2;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 800;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
 }
 .story-btn {
     position: static;

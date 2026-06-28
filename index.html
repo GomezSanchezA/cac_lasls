@@ -396,12 +396,14 @@
     <div class="story-closed-form" id="story-closed-form" role="img" aria-label="Closed form solution"></div>
     <div class="story-body" id="story-body"></div>
 </div>
+<div class="story-callout story-floating-callout" id="story-floating-callout"></div>
 <div class="story-actions">
     <div class="story-progress" id="story-progress"></div>
     <div class="story-button-row">
         <button class="story-btn story-btn-secondary" id="story-back-btn" onclick="previousDirectedStoryStep()" aria-label="Previous step">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
         </button>
+        <div class="story-step-number" id="story-step-number" aria-live="polite">1</div>
         <button class="story-btn story-btn-primary" id="story-continue-btn" onclick="nextDirectedStoryStep()" aria-label="Next step">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
         </button>
