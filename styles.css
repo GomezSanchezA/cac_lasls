@@ -1411,6 +1411,9 @@ body.directed.story-weight-compact .story-weight-definition {
     padding: 30px 64px 50px;
     backdrop-filter: blur(14px);
 }
+.story-popover.is-positioning {
+    visibility: hidden;
+}
 body.directed.story-ready .story-popover {
     display: block;
 }
