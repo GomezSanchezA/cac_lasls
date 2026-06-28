@@ -1714,6 +1714,54 @@ body.directed.story-floating-callout-visible .story-floating-callout {
 body.directed.story-callout-visible .story-callout.story-callout-dual {
     display: block;
 }
+.story-callout.story-callout-asls-issues {
+    position: fixed;
+    left: 50%;
+    top: clamp(118px, 15vh, 168px);
+    z-index: 705;
+    width: min(980px, calc(100vw - 120px));
+    max-width: calc(100vw - 120px);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    transform: translateX(-50%);
+}
+.story-asls-issues-title {
+    width: max-content;
+    max-width: 100%;
+    margin: 0 auto 16px;
+    padding: 10px 22px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 14px 34px rgba(15, 23, 42, 0.15);
+    font-size: clamp(26px, 2.3vw, 38px);
+    line-height: 1.06;
+    font-weight: 750;
+}
+.story-asls-issues-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: clamp(18px, 2.4vw, 34px);
+}
+.story-asls-issue-card {
+    min-height: clamp(96px, 13vh, 142px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 24px;
+    border: 1px solid rgba(123, 44, 191, 0.24);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 18px 38px rgba(15, 23, 42, 0.16);
+    color: #111827;
+    font-size: clamp(25px, 2.2vw, 36px);
+    line-height: 1.08;
+    font-weight: 750;
+    text-wrap: balance;
+}
 .story-callout-card {
     position: absolute;
     box-sizing: border-box;
