@@ -1488,7 +1488,7 @@ body.directed.story-center-equation.story-equation-upper .story-popover {
 body.directed.story-center-equation .story-equation {
     min-height: 156px;
     padding: 16px 24px 44px;
-    animation: centeredEquationIn 0.72s cubic-bezier(0.2, 0.85, 0.24, 1);
+    animation: none;
 }
 body.directed.story-center-equation .story-equation.has-closed-form {
     min-height: 340px;
@@ -1700,6 +1700,21 @@ body.directed.story-center-equation .story-callout.story-callout-left {
     padding: 12px 16px;
     text-align: left;
     font-size: clamp(21px, 1.85vw, 28px);
+    line-height: 1.08;
+    white-space: normal;
+}
+.story-callout.story-callout-weight-note {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 705;
+    box-sizing: border-box;
+    width: max-content;
+    max-width: min(30rem, calc(100vw - 4rem));
+    margin: 0;
+    padding: 14px 22px;
+    text-align: left;
+    font-size: clamp(22px, 2vw, 31px);
     line-height: 1.08;
     white-space: normal;
 }
