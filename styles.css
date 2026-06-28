@@ -1773,12 +1773,12 @@ body.directed.story-center-equation .story-callout.story-callout-left {
     z-index: 705;
     box-sizing: border-box;
     width: max-content;
-    max-width: min(44rem, calc(100vw - 7rem));
+    max-width: min(64rem, calc(100vw - 7rem));
     margin: 0;
-    padding: 14px 22px;
+    padding: 12px 20px;
     text-align: center;
-    font-size: clamp(23px, 2.15vw, 34px);
-    line-height: 1.08;
+    font-size: clamp(22px, 1.95vw, 32px);
+    line-height: 1.06;
     white-space: normal;
 }
 .story-body {
@@ -2409,7 +2409,7 @@ body.directed.story-lasls-param-dragging * {
     color: #0072B2;
     font-size: 20px;
     line-height: 1;
-    font-weight: 800;
+    font-weight: 400;
     box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
 }
 .story-btn {
