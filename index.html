@@ -415,6 +415,17 @@
 <button class="story-true-baseline-control" id="story-true-baseline-control" onclick="toggleTrueBaseline()" title="Show true baseline" aria-label="Show true baseline">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17c3.2 0 4.2-10 7.4-10 2.6 0 3.2 6 5.7 6 1.2 0 2-1.2 2.9-3"/><path d="M4 20h16" opacity=".45"/></svg>
 </button>
+<div class="story-sample-selector" id="story-sample-selector" aria-label="Sample selector">
+    <button type="button" onclick="stepStorySample(-1)" aria-label="Previous sample">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5 8 12l7 7"/></svg>
+    </button>
+    <span>Sample</span>
+    <input id="story-sample-input" type="number" min="1" value="1" inputmode="numeric" aria-label="Sample number" onkeydown="handleStorySampleKey(event)" onchange="commitStorySampleInput()" onfocus="this.select()">
+    <span id="story-sample-total">/ 1</span>
+    <button type="button" onclick="stepStorySample(1)" aria-label="Next sample">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+    </button>
+</div>
 <div class="story-method-banner" id="story-method-banner" aria-live="polite">
     <div class="story-method-title" id="story-method-title"></div>
 </div>

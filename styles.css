@@ -1066,6 +1066,12 @@ body.directed.story-focus .chart-wrapper {
     opacity: 0.42;
     transform: none;
 }
+body.directed.story-focus .story-true-baseline-control {
+    filter: blur(7px);
+    opacity: 0.42;
+    transform: none;
+    pointer-events: none;
+}
 .prelude-slide-deck {
     position: fixed;
     inset: 0;
@@ -1991,6 +1997,16 @@ body.directed.story-equation-mode .story-callout.story-callout-asls-issues,
     line-height: 1.08;
     font-weight: 750;
     text-wrap: balance;
+}
+.story-callout-lasls-benefits .story-asls-issues-title {
+    border-color: rgba(24, 128, 56, 0.30);
+    color: #188038;
+}
+.story-callout-lasls-benefits .story-asls-issue-card {
+    border-color: rgba(24, 128, 56, 0.34);
+    border-left-color: #188038;
+    background: rgba(240, 253, 244, 0.98);
+    color: #14532D;
 }
 @media (max-width: 900px), (max-height: 700px) {
     body.directed.story-equation-mode .story-callout.story-callout-asls-issues,
@@ -2974,6 +2990,72 @@ body.directed .story-true-baseline-control {
     stroke-width: 2.2;
     stroke-linecap: round;
     stroke-linejoin: round;
+}
+.story-sample-selector {
+    position: fixed;
+    top: 104px;
+    left: 50%;
+    z-index: 690;
+    display: none;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.96);
+    color: #1E293B;
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 750;
+    box-shadow: 0 16px 42px rgba(15, 23, 42, 0.16);
+    transform: translateX(-50%);
+}
+body.directed.story-sample-selector-enabled .story-sample-selector {
+    display: flex;
+}
+.story-sample-selector button {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    border-radius: 50%;
+    background: #EAF6FF;
+    color: #0072B2;
+    cursor: pointer;
+}
+.story-sample-selector button:hover {
+    background: #D8EEFF;
+}
+.story-sample-selector button:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+.story-sample-selector svg {
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.story-sample-selector input {
+    width: 58px;
+    height: 36px;
+    border: 1px solid #BFDBFE;
+    border-radius: 18px;
+    background: #fff;
+    color: #2F5597;
+    font: inherit;
+    text-align: center;
+    outline: none;
+}
+body.directed.story-focus .story-sample-selector {
+    filter: blur(7px);
+    opacity: 0.42;
+    pointer-events: none;
 }
 body.dark-mode.directed .chart-container {
     background: var(--bg-primary);
