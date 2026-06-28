@@ -1688,9 +1688,8 @@ body.directed.story-center-equation .story-callout.story-callout-left {
 }
 .story-callout.story-callout-solve {
     position: fixed;
-    left: clamp(28px, 4vw, 64px);
-    top: auto;
-    bottom: clamp(128px, 18vh, 190px);
+    left: 0;
+    top: 0;
     z-index: 705;
     box-sizing: border-box;
     width: max-content;
@@ -1704,28 +1703,14 @@ body.directed.story-center-equation .story-callout.story-callout-left {
 }
 .story-solve-arrow {
     display: block;
-    width: clamp(74px, 8vw, 120px);
-    height: clamp(36px, 4vw, 58px);
-    margin: 8px 0 -4px auto;
-    color: #0072B2;
-    overflow: visible;
-}
-.story-solve-arrow path {
-    fill: none;
-    stroke: currentColor;
-    stroke-width: 4.2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
-.story-solve-arrow polygon {
-    fill: currentColor;
+    width: clamp(42px, 4.2vw, 64px);
+    height: clamp(22px, 2.4vw, 34px);
+    margin: 7px 0 -2px auto;
 }
 .story-callout.story-callout-question {
     position: fixed;
-    left: 50%;
-    top: auto;
-    bottom: clamp(92px, 13vh, 148px);
-    transform: translateX(-50%);
+    left: 0;
+    top: 0;
     z-index: 705;
     box-sizing: border-box;
     width: max-content;
