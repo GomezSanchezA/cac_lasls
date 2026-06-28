@@ -1605,7 +1605,7 @@ body.directed.story-method-equation .story-title {
     font-weight: 750;
     box-shadow: 0 14px 34px rgba(15, 23, 42, 0.16);
 }
-body.directed.story-equation-mode .story-callout:not(.story-callout-dual):not(.story-callout-left) {
+body.directed.story-equation-mode .story-callout:not(.story-callout-dual):not(.story-callout-left):not(.story-callout-solve):not(.story-callout-question):not(.story-callout-weight):not(.story-callout-weight-note) {
     position: absolute;
     left: 0;
     top: 0;
