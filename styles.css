@@ -1183,6 +1183,9 @@ body.directed.story-slide-active .story-full-slide {
 .story-full-slide-point .blue {
     color: #2F5597;
 }
+.story-full-slide-point .purple {
+    color: #7e22ce;
+}
 .story-full-slide-point .no-wrap {
     display: inline-block;
     white-space: nowrap;
