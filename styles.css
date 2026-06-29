@@ -1927,9 +1927,15 @@ body.directed.story-callout-visible .story-callout {
     margin: 0;
     transform: none;
 }
-body.directed.story-floating-callout-visible .story-floating-callout {
+body.directed.story-floating-callout-visible .story-floating-callout:not(:empty) {
     display: block;
     text-align: center;
+}
+.story-floating-callout:empty {
+    display: none !important;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
 }
 .story-callout.story-callout-dual {
     position: absolute;
