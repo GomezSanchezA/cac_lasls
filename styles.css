@@ -2475,6 +2475,9 @@ body.directed.story-center-equation.story-closed-form-solve-note .story-closed-f
     max-width: min(1120px, calc(100vw - 64px));
     z-index: 735;
 }
+body.directed.story-center-equation.story-closed-form-visible.story-weight-centered.story-closed-form-solve-note .story-closed-form {
+    top: calc(100% + 128px);
+}
 .story-equation.is-typesetting > * {
     opacity: 0;
 }
