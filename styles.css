@@ -1827,7 +1827,7 @@ body.directed.story-center-equation.story-weight-centered .story-weight-definiti
     animation: centeredWeightIn 0.72s cubic-bezier(0.2, 0.85, 0.24, 1);
 }
 .story-weight-definition.story-weight-definition--symbolic {
-    font-size: 33px;
+    font-size: 24px;
 }
 body.directed.story-center-equation .story-weight-definition.story-weight-definition--symbolic {
     font-size: 33px;
