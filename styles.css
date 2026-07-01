@@ -2199,7 +2199,7 @@ body.directed.story-equation-mode .story-callout.story-callout-asls-loop,
     position: fixed;
     left: 50%;
     top: clamp(132px, 17vh, 168px);
-    z-index: 610;
+    z-index: 700;
     box-sizing: border-box;
     width: min(1400px, calc(100vw - 120px));
     height: min(585px, calc(100vh - 150px));
