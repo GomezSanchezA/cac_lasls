@@ -3115,7 +3115,7 @@ body.directed.story-focus .story-sample-selector {
 }
 .story-sample-param-panel {
     position: fixed;
-    top: 174px;
+    top: clamp(230px, 30vh, 300px);
     left: 50%;
     z-index: 690;
     width: min(760px, calc(100vw - 280px));
@@ -3175,7 +3175,7 @@ body.directed.story-focus .story-sample-param-panel {
 }
 @media (max-width: 980px) {
     .story-sample-param-panel {
-        top: 166px;
+        top: clamp(216px, 30vh, 280px);
         width: calc(100vw - 72px);
         min-width: 0;
         grid-template-columns: 1fr;
