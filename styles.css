@@ -1570,6 +1570,9 @@ body.directed.story-method-banner-visible .story-method-banner {
 .story-method-banner.has-title .story-method-title {
     display: block;
 }
+.story-method-banner.is-small-title .story-method-title {
+    font-size: 47px;
+}
 .story-method-banner.is-title-delayed .story-method-title {
     opacity: 0;
     animation: methodTitleDelayedIn 0.5s ease 0.72s forwards;
