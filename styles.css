@@ -2199,7 +2199,7 @@ body.directed.story-equation-mode .story-callout.story-callout-asls-loop,
     position: fixed;
     left: 50%;
     top: clamp(132px, 17vh, 168px);
-    z-index: 700;
+    z-index: 610;
     box-sizing: border-box;
     width: min(1400px, calc(100vw - 120px));
     height: min(585px, calc(100vh - 150px));
@@ -2242,7 +2242,7 @@ body.directed.story-equation-mode .story-callout.story-callout-asls-loop,
 body.directed.story-center-equation .story-popover,
 body.directed.story-center-equation .story-weight-definition,
 body.directed.story-center-equation .story-closed-form {
-    z-index: 620;
+    z-index: 630;
 }
 @media (max-height: 760px) {
     body.directed.story-equation-mode .story-callout.story-callout-asls-loop,
@@ -2473,6 +2473,7 @@ body.directed.story-closed-form-visible .story-closed-form {
 }
 body.directed.story-center-equation.story-closed-form-solve-note .story-closed-form {
     max-width: min(1120px, calc(100vw - 64px));
+    z-index: 735;
 }
 .story-equation.is-typesetting > * {
     opacity: 0;
