@@ -2478,6 +2478,9 @@ body.directed.story-center-equation.story-closed-form-solve-note .story-closed-f
 body.directed.story-center-equation.story-closed-form-visible.story-weight-centered.story-closed-form-solve-note .story-closed-form {
     top: calc(100% + 128px);
 }
+body.directed.story-center-equation.story-closed-form-visible.story-weight-centered.story-closed-form-solve-note.story-closed-form-kind-asls .story-closed-form {
+    top: calc(100% + 154px);
+}
 .story-equation.is-typesetting > * {
     opacity: 0;
 }
